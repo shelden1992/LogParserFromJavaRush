@@ -1,11 +1,14 @@
-package class_from_log.interfaces;
-
-import class_from_log.Event;
+package interfaces;
 
 import java.util.Date;
 import java.util.Set;
 
-public interface DateQuery {
+
+
+import java.util.Date;
+import java.util.Set;
+
+    public interface DateQuery {
         Set<Date> getDatesForUserAndEvent(String user, Event event, Date after, Date before);
 
         Set<Date> getDatesWhenSomethingFailed(Date after, Date before);

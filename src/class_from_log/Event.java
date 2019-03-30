@@ -1,5 +1,3 @@
-package class_from_log;
-
 public enum Event {
         LOGIN,
         DOWNLOAD_PLUGIN,

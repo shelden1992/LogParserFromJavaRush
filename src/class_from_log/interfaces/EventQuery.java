@@ -1,6 +1,4 @@
-package class_from_log.interfaces;
-
-import class_from_log.Event;
+package interfaces;
 
 import java.util.Date;
 import java.util.Map;

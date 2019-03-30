@@ -1,4 +1,4 @@
-package class_from_log.interfaces;
+package interfaces;
 
 import java.util.Date;
 import java.util.Set;

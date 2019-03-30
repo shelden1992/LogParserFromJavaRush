@@ -1,4 +1,4 @@
-package class_from_log;
+package class_from_log.interfaces;
 
 import class_from_log.Event;
 import class_from_log.Status;
