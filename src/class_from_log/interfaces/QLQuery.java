@@ -1,4 +1,4 @@
-package interfaces;
+package class_from_log.interfaces;
 
 import java.util.Set;
 

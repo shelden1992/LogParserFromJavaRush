@@ -1,4 +1,7 @@
-package interfaces;
+package class_from_log.interfaces;
+
+import class_from_log.Event;
+import class_from_log.Status;
 
 import java.util.Date;
 import java.util.Set;
@@ -15,4 +18,4 @@ public interface IPQuery {
 
         Set<String> getIPsForStatus(Status status, Date after, Date before);
     }
-}
+

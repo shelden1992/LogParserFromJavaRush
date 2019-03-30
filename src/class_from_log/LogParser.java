@@ -1,6 +1,7 @@
+package class_from_log;
 
 
-import interfaces.*;
+import class_from_log.interfaces.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +15,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQuery {
+public class LogParser implements IPQuery, DateQuery, EventQuery, QLQuery, UserQuery {
     private Pattern pattern=Pattern.compile("(?<ip>[\\d]+.[\\d]+.[\\d]+.[\\d]+)\\s" +
             "(?<name>[a-zA-Z ]+)" +
             "\\s(?<date>[\\d]+.[\\d]+.[\\d]+ [\\d]+:[\\d]+:[\\d]+)" +
@@ -880,6 +881,7 @@ public class LogParser implements IPQuery, UserQuery, DateQuery, EventQuery, QLQ
             if (eventAndParameter.length > 1) taskNumber=eventAndParameter[1];
             status=Status.valueOf(strings[4]);
         }
+
         //
         public String getIp() {
             return ip;
